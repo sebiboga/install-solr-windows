@@ -14,7 +14,17 @@ if exist C:\Solr (
     
     )
 
+if exist C:\Solr\solr-8.10.1.zip (
+    echo --- solr-8.10.1.zip already exist
+    
+) else ( 
 powershell -command "Invoke-WebRequest   -Uri 'https://dlcdn.apache.org/lucene/solr/8.10.1/solr-8.10.1.zip' -OutFile 'C:\Solr\solr-8.10.1.zip'"
-powershell -command "Expand-Archive -Force 'solr-8.10.1.zip' 'solr-8.10.1'"
+)
 
+if exist C:\Solr\solr-8.10.1 (
+    echo --- C:\Solr\solr-8.10.1 already exist
+    
+) else ( 
+powershell -command "Expand-Archive -Force 'C:\Solr\solr-8.10.1.zip' 'C:\Solr\solr-8.10.1'"
+)
 @echo on
