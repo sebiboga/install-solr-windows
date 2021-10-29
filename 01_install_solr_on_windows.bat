@@ -9,7 +9,7 @@ if exist C:\Solr (
     
 ) else ( 
     
-    mkdir Solr
+    mkdir C:\Solr
     echo --- Solr folder created
     
     )
