@@ -10,7 +10,7 @@ Preconditions:
 
 To start SOLR:
 * open CMD as Administrator and run the command:
- > SETX solr_home C:\Solr\solr-8.10.1 /M
+ > `SETX solr_home C:\Solr\solr-8.10.1 /M`
 
  then run this command:
- > C:\Solr\solr-8.10.1\bin\solr.cmd start -p 8983
+ > `C:\Solr\solr-8.10.1\bin\solr.cmd start -p 8983`
