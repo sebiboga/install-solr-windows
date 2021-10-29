@@ -16,4 +16,4 @@ To start SOLR:
  > `C:\Solr\solr-8.10.1\bin\solr.cmd start -p 8983`
 
 in browser open:
- > `[http://localhost:8983/](http://localhost:8983/)`
+ > [http://localhost:8983/](http://localhost:8983/)
