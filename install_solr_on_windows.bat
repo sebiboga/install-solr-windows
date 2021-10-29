@@ -25,6 +25,8 @@ if exist C:\Solr\solr-8.10.1 (
     echo --- C:\Solr\solr-8.10.1 already exist
     
 ) else ( 
-powershell -command "Expand-Archive -Force 'C:\Solr\solr-8.10.1.zip' 'C:\Solr\solr-8.10.1'"
+powershell -command "Expand-Archive -Force 'C:\Solr\solr-8.10.1.zip' 'C:\Solr\'"
+del /F "C:\Solr\solr-8.10.1.zip"
 )
+
 @echo on
