@@ -1,16 +1,20 @@
 # install-solr-windows
 script to automatically install solr locally in Windows
 
-
+INFO:
 * to download SOLR from web it's used powershell command
 * to unzip the archive it's used powershell command
+* script needs HDD C:\ partition
+* it will create a C:\Solr folder
+* the version for download is 8.10.1
 
-Preconditions:
+
+### Preconditions:
 * before starting SOLR be sure you have JAVA installed on your computer
 
-
+## Let's BEGIN
 1. Start the batch file:
- * 01_install_solr_on_windows.bat
+ * `01_install_solr_on_windows.bat`
 
 To start SOLR:
 * open CMD as Administrator and run the command:
@@ -26,15 +30,14 @@ in browser open:
 
 
 2. Start the batch file:
- * 02_create_new_core.bat
+ * `02_create_new_core.bat`
 
 
 3. Start the batch file:
- * 03_update_managed_schema.bat
+ * `03_update_managed_schema.bat`
 
  4. go to browser (where SOLR is running on localhost:8983)
  5. select CORE Admin
  6. click on reload
  7. select CORE
  8. check Schema section 
-   - you have new fields added
