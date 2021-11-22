@@ -41,3 +41,5 @@ in browser open:
  6. click on reload
  7. select CORE
  8. check Schema section 
+
+ Great job
